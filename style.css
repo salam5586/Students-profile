@@ -1,0 +1,122 @@
+  
+  body {
+    background-color: black;
+    color: white;
+  }
+  
+  .loading-text {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 300px;
+    border-right: 3px solid white;
+    width: 0;
+    font-size: 2rem;
+    color:white;
+    animation: typing 3s steps(30, end) forwards, blink 0.75s ease-in infinite;
+  }
+ @keyframes typing {
+    0% { width: 0%;}
+    100% {width: 30%;}
+ }
+ @keyframes blank {
+  50% { border-color: transparent; }
+ }
+ h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #af480c;
+ }
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    background-color: #af480c;
+    align-items: center;
+   display: flex;   
+   padding:  1rem 9%;
+   z-index: 100;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    color: white;
+    transition: all 1 ease;
+}
+.logo:hover {
+    color: wheat;
+    transform: scale(1.1)
+}
+.innercont {
+    height: 35px;
+    width: 40%;
+    margin-left: 25rem;
+}
+.innercont a {
+     margin-left: 4rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+    transition: all 0.4 ease;
+    border-bottom:  3px solid;
+}
+.innercont a:hover,
+.innercont a:active{
+    color: wheat;
+    border-bottom: 3px solid white;
+}
+
+#student-list{
+    width: 100%;
+   text-align: center;
+    align-items: center;
+   z-index: 100;
+   padding: 20px 20px 20px 20px;
+}
+.student-card {
+    display: inline-block;
+    height: 400px;
+    width: 350px;
+    background-color: wheat;
+    color: black;
+    border: 1px solid #ccc;
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease
+}
+.student-card:hover{
+    transform: scale(1) translateY(-5px);
+    box-shadow: 0 0 25px;
+}
+.student-card h3{
+text-align: center;
+}
+.student-card p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    }
+.profile-img {
+    width: 120px;
+    height: 150px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  #subject-list {
+    height: 300px;
+    width: 400px;
+  text-align: center;
+   margin-left: 40%;
+   bottom: 20%;
+  }
+
+  #subject-list li:hover {
+    transform: scale(1) translateX(-5px);
+    box-shadow: 0 0 15px;
+  }
+ 
